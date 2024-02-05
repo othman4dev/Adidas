@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(243, 249, 255) !important;
+}
+header{
+    height: 80px !important;
+}
+header, aside{
+    background-color: white;
+}
+aside{
+    width: 250px !important;
+    box-shadow: 2px 1px 30px rgba(211, 211, 211, 0.39);
+    min-height: 80vh;
+}
+section {
+    width: 100% !important;
+}
+.ml-100{
+    margin-left: 100px;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+.togl_menu{
+    margin-left: 80px;
+}
+.ml-2{
+    margin-left: 20px;
+}
+.nav-link {
+    color: #012970 !important;
+}
+.nav-link.active{
+    color: #4154f1 !important;
+    background-color: #f6f9ff;
+}
+.nav-link:hover{
+    color: #4154f1 !important;
+    background-color:  #f6f9ff;
+}
+h2{
+    color: #012970 !important;
+}
+.headerSection span span{
+    color: #0239987a;
+}
+.headerSection span{
+    color: #012970;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+#asideBar {
+    transition: width 0.3s ease;
+}
+.card{
+    width: 300px;
+    height: 150px !important;
+}
+.card-title{
+    font-size: 20px !important;
+    color: #012970 !important;
+}
+.card_footr h6{
+    font-size: 30px !important;
+}
+.fas{
+    text-align: center;
+    padding-top: 15px;
+    width: 50px;
+    height: 50px;
+}
+#asideBar.collapsed {
+    width: 80px !important;
+    animation: fadeIn 0.3s ease;
+}
+@media screen and (max-width:580px) {
+    #asideBar {
+        display: none;
+    }
+    .togl_menu{
+        margin-left: 10px;
+    }
+    .search{
+        display: none;
+    }
+    #asideBar.collapsed {
+        position: absolute !important;
+        display: block;
+        width: 240px !important;
+    }
+    #asideBar.collapsed .nav-link span.ml-2{
+        display: inline !important;
+    }
+}
