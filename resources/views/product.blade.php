@@ -53,7 +53,7 @@
       <tr>
         <td>
           <div class="d-flex align-items-center">
-            <img src="https://mdbootstrap.com/img/new/avatars/8.jpg" alt=""  style="width: 45px; height: 45px" class="rounded-circle"/>
+            <img src="assets/img/item.png" alt=""  style="width: 45px; height: 45px" class="rounded-circle"/>
             <p class="fw-bold mb-1 ms-3">{{$product->name}}</p>
           </div>
         </td>
@@ -109,7 +109,7 @@
                           <option value="{{ $categorie->id}}">{{$categorie->name}}</option>
                           @endforeach
                         </select>
-                        <select name="tages_id[]" class='form-select  mt-3' multiple>
+                        <select name="tages_id[]" class='form-select mt-3' multiple>
                           @foreach($tages as $tage)
                           <option value="{{ $tage->id }}" 
                             @if(isset($TagList[$product->id]))

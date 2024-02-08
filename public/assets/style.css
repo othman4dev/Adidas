@@ -1,5 +1,9 @@
+* {
+    font-family: montserrat !important;
+}
 body{
-    background-color: rgb(243, 249, 255) !important;
+    background-color: rgb(243, 243, 243) !important;
+    overflow-x: hidden;
 }
 header{
     height: 80px !important;
@@ -57,6 +61,7 @@ h2{
 }
 #asideBar {
     transition: width 0.3s ease;
+    min-height: 87vh;
 }
 .card{
     width: 300px;
