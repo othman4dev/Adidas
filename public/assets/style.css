@@ -12,9 +12,26 @@ header, aside{
     background-color: white;
 }
 aside{
-    width: 250px !important;
+    width: 330px !important;
     box-shadow: 2px 1px 30px rgba(211, 211, 211, 0.39);
-    min-height: 80vh;
+    min-height: 100vh;
+    position: sticky;
+}
+.menuCo {
+    background-color: #012970;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: -13px;
+}
+.menuCo:hover {
+    cursor: pointer;
+    scale: 1.05;
 }
 section {
     width: 100% !important;
@@ -102,4 +119,50 @@ h2{
     #asideBar.collapsed .nav-link span.ml-2{
         display: inline !important;
     }
+}
+#myTable {
+    background-color: #fff !important;
+}
+#myTable_wrapper {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+}
+.edit {
+    background-color: #0091dc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+.delete {
+    background-color: #f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 7px;
+}
+.edit:hover {
+    background-color: #0073aa;
+
+}
+.delete:hover {
+    background-color: rgb(132, 36, 36);
+}
+.mini {
+    width: 200px;
+}
+.intro {
+    background-color:#fff;
+    height:600px;
+    width:95%;
+    padding:35px;
+    margin:15px;
+    border-radius:15px;
+    box-shadow:0 0 8px -1px #00000020;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    flex-grow:1
 }

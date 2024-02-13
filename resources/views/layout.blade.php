@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.cdnfonts.com/css/montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
   </head>
   <body class="h-100">
     <header class="p-3 border-bottom">
@@ -17,18 +19,15 @@
             <div class="d-flex align-items-center justify-content-between ">
                 <div class="d-flex gap-4 align-items-center ">
                     <div class="logo cursor-pointer ">
-                        <img src="assets/img/logo.svg" width="120px" alt="">
+                        <img src="assets/img/logo.png" height="40px" alt="">
+                        <img src="assets/img/logo2.png" height="40px" alt="">
                     </div>
-                    <div class="togl_menu cursor-pointer" id="togl_menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-                        </svg>
-                    </div>
+                    
                 </div>
                 <div class="profile d-flex gap-4 align-items-center">
                     
                     <div class="dropdown text-end">
-                        <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="d-block link-dark text-decoration-none">
                             <img src="assets/img/user.png" alt="mdo" width="32" height="32" class="rounded-circle">
                             Administrator
                         </a>
@@ -57,6 +56,9 @@
                     <span class="ml-2">Tags List</span>
                 </a>
             </div>
+            <div class="menuCo" id="togl_menu">
+                <i class="bi bi-caret-left-fill"></i>
+            </div>
         </aside>
         <section class=" ml-2 p-2">
             @yield('content')
@@ -67,29 +69,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-<script type="text/javascript">
-
-    $(function () {
-    
-        // Initialize the DataTable
-    
-        var table = $('#daterange_table').DataTable({
-            processing : true,
-            serverSide : true,
-            ajax : {
-            // Define the URL to fetch data from using the 'users.index' route
-                url : "{{ route('product.index') }}",
-            // Pass additional data to the server, including the start_date and end_date
-    
-            },
-            columns : [
-                {data : 'id', name : 'id'},
-                {data : 'name', name : 't'},
-                {data : 'email', name : 'email'},
-                {data : 'created_at', name : 'created_at'}
-            ]
-        });
-    
-    });
-    
-    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" ></script>
+<script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+<script>
+  $(document).ready( function () {
+    $('#myTable').DataTable();
+    } );
+</script>

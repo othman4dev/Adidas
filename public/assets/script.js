@@ -4,6 +4,7 @@ var navLinks = document.querySelectorAll('.nav-link span.ml-2');
 
 togl_menu.addEventListener('click', function () {
     asideBar.classList.toggle('collapsed');
+    togl_menu.style.transform = 'rotate(180px)';
     navLinks.forEach(function (link) {
         link.style.display = (asideBar.classList.contains('collapsed')) ? 'none' : 'inline';
     });

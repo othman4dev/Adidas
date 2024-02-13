@@ -5,9 +5,10 @@
         <h2>Dashboard</h2>
         <span><span>Home</span> / Dashboard</span>
     </div>
-    <div style="background-color:#fff;height:500px;width:90%;padding:35px;margin:15px;border-radius:15px;box-shadow:0 0 8px -1px #00000020;display:flex;flex-direction:column;align-items:center;justify-content:center;flex-grow:1">
-        <img src="assets/img/logo.svg" width="80%" alt="">
-        <h1>Welcome to Adidas controll panel</h1>
+    <div class="intro">
+        <img src="assets/img/logo.png" width="40%" alt="">
+        <img src="assets/img/logo2.png" width="40%" alt="">
+        <h3>Welcome to Adidas controll panel</h3>
     </div>
 </section>
 @endsection
